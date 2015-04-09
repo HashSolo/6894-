@@ -23,6 +23,7 @@ sys.path.insert(0, caffe_root + 'python')
 
 import caffe
 
+# Make sure that this first links to the 'caffe-master' directory 
 # Set the right path to your model definition file, pretrained model weights,
 # and the image you would like to classify.
 MODEL_FILE = '../../caffe-master/models/bvlc_reference_caffenet/deploy.prototxt'
