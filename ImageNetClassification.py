@@ -51,6 +51,7 @@ plt.plot(prediction[0])
 print 'predicted class:', prediction[0].argmax()
 print(prediction[0])
 
+#test commit
 
 print '... hello world'
 
