@@ -76,7 +76,7 @@ vis_square(filters.transpose(0, 2, 3, 1))
 feat = net.blobs['conv1'].data[0, :36]
 vis_square(feat, padval=1)
 
-#plt.show()
+plt.show()
 
 filters = net.params['conv2'][0].data
 vis_square(filters[:48].reshape(48**2, 5, 5))
