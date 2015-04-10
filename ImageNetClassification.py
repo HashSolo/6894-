@@ -45,9 +45,9 @@ net = caffe.Classifier(MODEL_FILE, PRETRAINED,
 	                       image_dims=(256, 256))
 
 input_image = caffe.io.load_image(IMAGE_FILE)
-#plt.imshow(input_image)
+plt.imshow(input_image)
 
-#plt.show()
+plt.show()
 
 prediction = net.predict([input_image])  # predict takes any number of images, and formats them for the Caffe net automatically
 print 'prediction shape:', prediction[0].shape
@@ -81,6 +81,9 @@ caffe_input = np.asarray([net.transformer.preprocess('data', in_) for in_ in inp
 
 # now try and extract output from 2nd to last layer
 # starting filter visualization tutorial 
+
+
+
 
 print '... hello world'
 
